@@ -3,8 +3,8 @@ import { deleteOneItem } from "~/server/operations/items/deleteOne"
 import { getAllItems } from "~/server/operations/items/getAll"
 import { getOneItem } from "~/server/operations/items/getOne"
 import { saveOneItem } from "~/server/operations/items/saveOne"
-import { TokenPayload } from "~/server/types/general"
-import { ItemIdPayload, SaveItemPayload } from "~/server/types/items"
+import { TokenPayload } from "~/types/general"
+import { ItemIdPayload, SaveItemPayload } from "~/types/items"
 
 import { createTRPCRouter, publicProcedure } from "../utils"
 

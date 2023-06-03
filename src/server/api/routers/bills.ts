@@ -3,8 +3,8 @@ import { deleteOneBill } from "~/server/operations/bills/deleteOne"
 import { getAllBills } from "~/server/operations/bills/getAll"
 import { getOneBill } from "~/server/operations/bills/getOne"
 import { saveOneBill } from "~/server/operations/bills/saveOne"
-import { BillIdPayload, SaveBillPayload } from "~/server/types/bills"
-import { TokenPayload } from "~/server/types/general"
+import { BillIdPayload, SaveBillPayload } from "~/types/bills"
+import { TokenPayload } from "~/types/general"
 
 import { createTRPCRouter, publicProcedure } from "../utils"
 

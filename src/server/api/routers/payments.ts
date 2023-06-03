@@ -2,8 +2,8 @@ import { z } from "zod"
 import { deleteOnePayment } from "~/server/operations/payments/deleteOne"
 import { getAllPayments } from "~/server/operations/payments/getAll"
 import { saveOnePayment } from "~/server/operations/payments/saveOne"
-import { BillIdPayload } from "~/server/types/bills"
-import { PaymentIdPayload, SavePaymentPayload } from "~/server/types/payments"
+import { BillIdPayload } from "~/types/bills"
+import { PaymentIdPayload, SavePaymentPayload } from "~/types/payments"
 
 import { createTRPCRouter, publicProcedure } from "../utils"
 
