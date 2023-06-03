@@ -37,10 +37,13 @@ export const itemsRouter = createTRPCRouter({
         location: z.string().nonempty().optional(),
         photo: z.string().optional(), // could be a base64 encoded image for storage simplicity
         quantity: z.number().nonnegative(),
+        notes: z.string().optional(),
         reminder: z
           .object({
             remindAt: z.number().nonnegative(),
             remindText: z.string().nonempty(),
+            lastAcknowledged: z.number().nonnegative().optional(),
+            recurrence: z.string().optional(),
           })
           .optional(),
       })
